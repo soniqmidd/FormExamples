@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Examples</title>
+    <style>
+      input {
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/submit">
+      <label for="email">What is your email address?</label>
+      <input type="email" name="email" id="email" />
+
+      <div>
+        <label>Cat, Dog or Frog?</label>
+
+        <input type="radio" name="pet" id="Cat" /> <label for="Cat">Cat</label>
+        <input type="radio" name="pet" id="Dog" /> <label for="Dog">Dog</label>
+        <input type="radio" name="pet" id="Frog" />
+        <label for="Frog">Frog</label>
+      </div>
+
+      <div>
+        <label>Which pets do you have?</label>
+        <div>
+          <input type="checkbox" name="pets" id="Cats" />
+          <label for="Cats">Cats</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="pets" id="Dogs" />
+          <label for="Dogs">Dogs</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="pets" id="Frogs" />
+          <label for="Frogs">Frogs</label>
+        </div>
+      </div>
+
+      <div>
+        <input type="submit" value="Sign Up" />
+      </div>
+    </form>
+  </body>
+</html>
